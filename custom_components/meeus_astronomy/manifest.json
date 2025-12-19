@@ -1,0 +1,11 @@
+{
+  "domain": "meeus_astronomy",
+  "name": "Jean Meeus Astronomy",
+  "codeowners": ["@Greg50100"],
+  "config_flow": true,
+  "documentation": "https://github.com/Greg50100/ha-meeus-astronomy",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/Greg50100/ha-meeus-astronomy/issues",
+  "requirements": [],
+  "version": "1.0.0"
+}

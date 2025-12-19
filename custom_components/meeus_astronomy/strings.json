@@ -1,0 +1,22 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure Astronomy Location",
+        "description": "Set the coordinates for astronomical calculations. Defaults to your Home Assistant location.",
+        "data": {
+          "location_name": "Location Name",
+          "latitude": "Latitude",
+          "longitude": "Longitude",
+          "elevation": "Elevation (m)"
+        }
+      }
+    },
+    "error": {
+      "invalid_coordinates": "The coordinates provided are invalid."
+    },
+    "abort": {
+      "already_configured": "This location is already configured"
+    }
+  }
+}
