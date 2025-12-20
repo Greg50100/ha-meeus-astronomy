@@ -67,3 +67,7 @@ def degrees_to_hms(degrees: float) -> str:
     m = int((hours_float - h) * 60)
     s = int((((hours_float - h) * 60) - m) * 60)
     return f"{h:02d}:{m:02d}:{s:02d}"
+
+def degrees_to_decimal_hours(degrees: float) -> float:
+    """Convert degrees (0-360) to decimal hours."""
+    return degrees / 15.0
