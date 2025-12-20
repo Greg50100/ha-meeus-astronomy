@@ -35,33 +35,3 @@ def get_julian_day(date_utc: datetime) -> float:
     
     JD = math.floor(365.25 * (Y + 4716)) + math.floor(30.6001 * (M + 1)) + D + B - 1524.5
     return JD + day_fraction
-
-import math
-from datetime import datetime
-
-def get_julian_day_zero(date_utc: datetime) -> float:
-    """
-    Calculate Julian Day (JDo) corresponding to January 0.0 of a given year.
-    This is the same as December 31.0 of the preceding year.
-    
-    Args:
-        date_utc (datetime): The date object containing the year.
-        
-    Returns:
-        float: The Julian Day number for Jan 0.0.
-    """
-    Y = date_utc.year - 1
-    
-    # Check if we are in the specific range where the simplified formula applies
-    if 1901 <= date_utc.year <= 2099:
-        JDo = 1721409.5 + math.floor(365.25 * Y)
-    else:
-        # General Gregorian formula
-        A = math.floor(Y / 100)
-        # The constant 1721424.5 corrects for the Gregorian offset and the date position
-        JDo = math.floor(365.25 * Y) - A + math.floor(A / 4) + 1721424.5
-
-    return JDo
-
-
-    

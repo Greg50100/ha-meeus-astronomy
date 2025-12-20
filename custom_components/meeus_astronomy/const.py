@@ -1,4 +1,4 @@
-"""Constants for the Jean Meeus Astronomy integration."""
+"""Constants for the Astronomy integration."""
 
 DOMAIN = "meeus_astronomy"
 
@@ -8,4 +8,4 @@ CONF_LONGITUDE = "longitude"
 CONF_LATITUDE = "latitude"
 CONF_ELEVATION = "elevation"
 
-DEFAULT_NAME = "Meeus Astronomy"
+DEFAULT_NAME = "Astronomy"

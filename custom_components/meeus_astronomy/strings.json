@@ -22,12 +22,6 @@
   "sensor": {
     "julian_day": {
       "name": "Julian Day"
-    },
-    "gmst": {
-      "name": "Greenwich Mean Sidereal Time"
-    },
-    "lmst": {
-      "name": "Local Mean Sidereal Time"
     }
   }
 }
