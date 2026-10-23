@@ -1,5 +1,14 @@
 # ha-meeus-astronomy
 
+> [!WARNING]
+> **Projet archivé — fusionné dans [Céleste pour Home Assistant](https://github.com/Greg50100/Celeste_HA).**
+> Céleste reprend le jour julien, le jour julien modifié, le jour de l'année, les jours depuis J2000 et les
+> deux services de conversion (`celeste.convert_to_julian_day`, `celeste.convert_to_gregorian`), et ajoute
+> le temps sidéral, l'équation du temps et les éphémérides du Soleil, de la Lune et des planètes.
+>
+> **Migration** : supprimez l'intégration « Meeus Astronomical Algorithms », installez Céleste depuis HACS
+> (dépôt personnalisé `https://github.com/Greg50100/Celeste_HA`) puis ajoutez une entrée « Temps astronomique ».
+
 Home Assistant custom component for astronomical calculations based on Jean Meeus' "Astronomical Algorithms".
 
 ## Installation
